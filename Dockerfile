@@ -22,3 +22,4 @@ RUN wget https://github.com/ethicalhack3r/DVWA/archive/v${VERSION}.tar.gz && \
 EXPOSE 80 3306
 
 CMD ["/run.sh"]
+
