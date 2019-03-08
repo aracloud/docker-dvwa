@@ -1,6 +1,6 @@
 FROM tutum/lamp
 
-MAINTAINER Daniel Romero <infoslack@gmail.com>
+MAINTAINER aracloud <aracloud@gmx.net>
 
 ENV VERSION 1.9
 
