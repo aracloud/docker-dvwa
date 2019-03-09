@@ -19,7 +19,7 @@ RUN wget https://github.com/ethicalhack3r/DVWA/archive/v${VERSION}.tar.gz && \
     chmod +x /tmp/setup_dvwa.sh && \
     /tmp/setup_dvwa.sh
 
-EXPOSE 80 3306
+# EXPOSE 80 3306
 
 CMD ["/run.sh"]
 
