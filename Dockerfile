@@ -23,3 +23,5 @@ RUN wget https://github.com/ethicalhack3r/DVWA/archive/v${VERSION}.tar.gz && \
 
 CMD ["/run.sh"]
 
+ENTRYPOINT ["/tmp/myStartupScript.sh"]
+
