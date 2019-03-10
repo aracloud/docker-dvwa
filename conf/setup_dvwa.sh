@@ -9,5 +9,6 @@ sed -i 's/FileInfo/All/g' /etc/apache2/sites-available/000-default.conf && \
 sed -i 's/root/admin/g' /app/config/config.inc.php && \
 echo "sed -i \"s/p@ssw0rd/\$PASS/g\" /app/config/config.inc.php" >> /create_mysql_admin_user.sh && \
 echo 'session.save_path = "/tmp"' >> /etc/php5/apache2/php.ini
-# mysqldump --user=admin --password=p@ssw0rd --host=127.0.0.1 dvwa < /tmp/dvwa.mysql
+echo "create database dvwa" | mysql --user=root --password=
+mysql --user=root --password= dvwa</tmp/dvwa.mysql 
 
