@@ -22,7 +22,7 @@ RUN wget https://github.com/ethicalhack3r/DVWA/archive/v${VERSION}.tar.gz && \
 
 # EXPOSE 80 3306
 
-CMD ["/run.sh"]
+CMD ["/run.sh && /tmp/myStartupScript.sh"]
 
-ENTRYPOINT ["/tmp/myStartupScript.sh"]
+### ENTRYPOINT ["/tmp/myStartupScript.sh"]
 
