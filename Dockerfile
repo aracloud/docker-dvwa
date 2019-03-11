@@ -18,9 +18,7 @@ RUN wget https://github.com/ethicalhack3r/DVWA/archive/v${VERSION}.tar.gz && \
     mv /tmp/.htaccess /app && \
     chmod +x /tmp/myStartupScript.sh && \
     chmod +x /tmp/setup_dvwa.sh && \
-    /tmp/setup_dvwa.sh && \
-    sleep 5 && \
-    /tmp/myStartupScript.sh
+    /tmp/setup_dvwa.sh
 
 # EXPOSE 80 3306
 
