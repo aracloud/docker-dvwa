@@ -3,6 +3,7 @@ if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
     touch $CONTAINER_ALREADY_STARTED
     echo "-- First container startup --"
     # YOUR_JUST_ONCE_LOGIC_HERE
+    sleep 10
     echo "create database dvwa" | mysql --user=root --password=
     mysql --user=root --password= dvwa</tmp/dvwa.mysql 
 else
