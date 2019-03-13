@@ -11,6 +11,10 @@ RUN rm -rf /app && \
 
 COPY conf/* /tmp/
 
+# IMPORTANT NOTE !!!
+# /mysql-setup.sh is being defined in /create_mysql_admin_user.sh
+# to initiate the DVWA DB therefor the script is beeing renamed
+
 RUN wget https://github.com/ethicalhack3r/DVWA/archive/v${VERSION}.tar.gz && \
     tar xvf /v${VERSION}.tar.gz && \
     mv -f /DVWA-${VERSION} /app && \
