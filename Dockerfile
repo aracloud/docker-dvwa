@@ -17,13 +17,11 @@ RUN wget https://github.com/ethicalhack3r/DVWA/archive/v${VERSION}.tar.gz && \
     rm /app/.htaccess && \
     mv /tmp/.htaccess /app && \
     chmod +x /tmp/myStartupScript.sh && \
+    mv /tmp/myStartupScript.sh /mysql-setup.sh && \
     chmod +x /tmp/setup_dvwa.sh && \
     /tmp/setup_dvwa.sh
 
 # EXPOSE 80 3306
 
-#CMD ["/run.sh && /tmp/myStartupScript.sh"]
 CMD ["/run.sh"]
-
-### ENTRYPOINT ["/tmp/myStartupScript.sh"]
 
