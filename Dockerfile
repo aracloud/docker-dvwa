@@ -3,7 +3,7 @@ FROM tutum/lamp
 MAINTAINER aracloud <aracloud@gmx.net>
 
 # version changed from v1.9 to master
-ENV VERSION 1.9
+ENV VERSION master
 
 RUN rm -rf /app && \
     apt-get update && \
@@ -16,8 +16,8 @@ COPY conf/* /tmp/
 # /mysql-setup.sh is being defined in /create_mysql_admin_user.sh
 # to initiate the DVWA DB therefor the script is beeing renamed
 
-RUN wget https://github.com/aracloud/DVWA/archive/v${VERSION}.tar.gz && \
-    tar xvf /v${VERSION}.tar.gz && \
+RUN wget https://github.com/aracloud/DVWA/archive/${VERSION}.tar.gz && \
+    tar xvf /${VERSION}.tar.gz && \
     mv -f /DVWA-${VERSION} /app && \
     rm /app/.htaccess && \
     mv /tmp/.htaccess /app && \
