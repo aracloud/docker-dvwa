@@ -111,7 +111,7 @@ echo "
 
 ";
 
-print "<div align=center><font size=10>";
+print "<div align=center><font size=5>";
 echo "Server IP: ";
 echo $_SERVER['SERVER_ADDR'];
 print "</font></div>";
