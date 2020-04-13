@@ -225,16 +225,11 @@ echo "
 
 
 print "<div align=center><font size=2>";
-
 echo "Server IP: ";
-
 echo $_SERVER['SERVER_ADDR'];
-
-echo "<br />";
 echo "<br />";
 echo "Client/Proxy IP: ";
 echo $_SERVER['REMOTE_ADDR'];
-echo "<br />";
 echo "<br />";
 echo "X44 IP: ";
 echo $_SERVER['HTTP_X_FORWARDED_FOR'];
