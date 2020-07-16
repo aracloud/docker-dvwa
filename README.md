@@ -6,7 +6,7 @@ This container runs directly with an initialized MySQL database.
 So, it's ready for testing without any further manual setup step's need.
 Just plug-n-play that makes it easy!
 
-### Login creds
+### Login credentials
 - username: `admin`
 - password: `password`
 
