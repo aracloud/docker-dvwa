@@ -224,7 +224,7 @@ echo "
 
 
 
-print "<div align=center><font size=5>";
+print "<div align=center><font size=1>";
 echo "Server IP: ";
 echo $_SERVER['SERVER_ADDR'];
 echo "<br />";
