@@ -1,5 +1,5 @@
 # docker-dvwa
-Docker image for DVWA([Damn Vulnerable Web Application](http://www.dvwa.co.uk/))
+Docker image for DVWA ([Damn Vulnerable Web Application](http://www.dvwa.co.uk/))
 
 ### Note
 This container runs directly with an initialized MySQL database.
