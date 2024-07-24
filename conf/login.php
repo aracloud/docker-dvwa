@@ -225,6 +225,9 @@ echo "
 
 
 print "<div align=center><font size=1>";
+echo "Server Name: ";
+echo $_SERVER['SERVER_NAME'];
+echo "<br />";
 echo "Server IP: ";
 echo $_SERVER['SERVER_ADDR'];
 echo "<br />";
