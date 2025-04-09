@@ -1,9 +1,9 @@
-FROM tutum/lamp
+# FROM tutum/lamp
+FROM mattrayner/lamp
 
-MAINTAINER aracloud <aracloud@gmx.net>
 
 # version changed from v1.9 to master
-ENV VERSION 1.9
+ENV VERSION=1.9
 
 RUN rm -rf /app && \
     apt-get update && \
