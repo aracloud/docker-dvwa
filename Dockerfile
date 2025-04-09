@@ -16,7 +16,7 @@ COPY conf/* /tmp/
 # /mysql-setup.sh is being defined in /create_mysql_admin_user.sh
 # to initiate the DVWA DB therefor the script is beeing renamed
 
-RUN wget https://github.com/ethicalhack3r/DVWA/archive/v${VERSION}.tar.gz && \
+RUN wget https://github.com/aracloud/docker-dvwa/blob/master/conf/v1.9.tar.gz&& \
     tar xvf /v${VERSION}.tar.gz && \
     mv -f /DVWA-${VERSION} /app && \
     rm /app/.htaccess && \
