@@ -1,5 +1,5 @@
-# FROM tutum/lamp
-FROM mattrayner/lamp
+FROM tutum/lamp
+# FROM mattrayner/lamp
 
 
 # version changed from v1.9 to master
